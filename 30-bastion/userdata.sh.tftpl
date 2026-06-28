@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 growpart /dev/nvme0n1 ${partition_num}
 lvextend -r -L +${size}G /dev/mapper/RootVG-homeVol
