@@ -32,6 +32,6 @@ variable "env" {
   default = "santoshshell.online"
  }
 
-variable "mysql_passwd" {
-  type = string
-  }
+# variable "mysql_passwd" {
+#   type = string
+#   }
