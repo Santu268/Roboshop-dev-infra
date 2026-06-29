@@ -35,3 +35,8 @@ variable "env" {
 # variable "mysql_passwd" {
 #   type = string
 #   }
+
+ variable "mongo_script_version" {
+  type = string
+  default = "1.1"
+ }
