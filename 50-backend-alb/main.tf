@@ -30,7 +30,7 @@ resource "aws_lb_listener" "backend_alb" {
     type = "fixed-response"
 
     fixed_response {
-      content_type = "text/plain"
+      content_type = "text/html"
       message_body = "<html><head><h1>app load balancer</head><body>welcome to Load balancer concept</body></html>"
       status_code  = "200"
     }
