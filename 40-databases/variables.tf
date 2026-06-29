@@ -36,7 +36,12 @@ variable "env" {
 #   type = string
 #   }
 
- variable "mongo_script_version" {
+  variable "redis_script_version" {
+  type = string
+  default = "1.1"
+ }
+
+  variable "rabbitmq_script_version" {
   type = string
   default = "1.1"
  }
