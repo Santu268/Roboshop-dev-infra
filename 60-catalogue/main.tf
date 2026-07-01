@@ -128,8 +128,7 @@ resource "aws_autoscaling_group" "catalogue" {
     preferences {
       min_healthy_percentage = 50
     }
-    triggers = ["launch_template"]
-  }
+    }
 target_group_arns = [aws_lb_target_group.catalogue.arn]
  dynamic "tag"{
   for_each = local.common_tags
