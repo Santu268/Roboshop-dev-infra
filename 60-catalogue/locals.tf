@@ -1,5 +1,5 @@
 locals {
-private_subnet_id = split(",",data.aws_ssm_parameter.private_subnet_id.value)[0]
+private_subnet_id = split(",",data.aws_ssm_parameter.private_subnet_ids.value)[0]
 ami_id = data.aws_ami.ami_name.id
 common_name = "${var.project}-${var.env}"
 catalogue_sg_id = data.aws_ssm_parameter.catalogue_sg_id.value
