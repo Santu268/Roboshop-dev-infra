@@ -1,6 +1,7 @@
 #!/bin/bash
 component=$1
 env=$2
+app_version=$3
 dnf install ansible -y
 
 mkdir -p /var/log/roboshop
@@ -13,4 +14,4 @@ git clone https://github.com/Santu268/ansible-01-v2.git
 cd ansible-01-v2
 git pull
 
-ansible-playbook -e component=$component -e env=$env roboshop-roles.yaml
+ansible-playbook -e component=$component -e env=$env -e app_version=$app_version roboshop-roles.yaml

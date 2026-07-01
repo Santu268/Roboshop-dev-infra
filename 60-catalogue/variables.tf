@@ -36,3 +36,8 @@ variable "env" {
   type = string
   default = "1.1"
  }
+
+  variable "app_version" {
+  type = string
+  default = "v3"
+ }
