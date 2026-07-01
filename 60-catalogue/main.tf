@@ -136,7 +136,7 @@ target_group_arns = [aws_lb_target_group.catalogue.arn]
 
   content {
     key = tag.key
-    valuue = tag.value
+    value = tag.value
     propagate_at_launch = true
   }
  }
