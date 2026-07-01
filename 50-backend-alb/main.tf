@@ -8,7 +8,7 @@ resource "aws_lb" "backend_alb" {
   enable_deletion_protection = false
 
   access_logs {
-    bucket  = terraform-state-daws90-v1
+    bucket  = "terraform-state-daws90-v1"
     prefix  = "backend-lb"
     enabled = true
   }
