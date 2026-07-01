@@ -1,5 +1,5 @@
 resource "aws_lb" "backend_alb" {
-  name               = "${var.project}-${var.env}-backend_alb"
+  name               = "${var.project}-${var.env}-backend-alb"
   internal           = true
   load_balancer_type = "application"
   security_groups    = [local.backend_alb_sg_id]
@@ -7,16 +7,10 @@ resource "aws_lb" "backend_alb" {
 
   enable_deletion_protection = false
 
-  access_logs {
-    bucket  = "terraform-state-daws90-v1"
-    prefix  = "backend-lb"
-    enabled = true
-  }
-
-  tags = merge (
+   tags = merge (
     local.common_tags,
     {
-      Name = "${local.common_name}-backend_alb"
+      Name = "${local.common_name}-backend-alb"
     }
   )
 }
