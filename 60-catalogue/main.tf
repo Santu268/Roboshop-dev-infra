@@ -176,6 +176,8 @@ resource "aws_lb_listener_rule" "catalogue_backend_alb_rule" {
     }
   }
 
+}
+
 resource "terraform_data" "catalogue_terminate" {
   triggers_replace = [
      aws_instance.catalogue.id
