@@ -9,7 +9,7 @@ terraform {
   backend "s3" {
 
     bucket = "terraform-state-daws90-v1"
-    key    = "roboshop-databases.tftstate"
+    key    = "roboshop-catalogue.tftstate"
     region = "us-east-1"
     use_lockfile = true
     encrypt        = true
