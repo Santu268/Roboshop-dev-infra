@@ -39,6 +39,6 @@ resource "aws_ec2_instance_state" "catalogue" {
 }
 
 resource "aws_ami_from_instance" "catalogue" {
-  name               = "${var.project}-${var.env}-catalogue-${app_version}-${aws_instance.catalogue.id}"
+  name               = "${var.project}-${var.env}-catalogue-${app_version}-aws_instance.catalogue.id"
   source_instance_id = aws_instance.catalogue.id
 }
