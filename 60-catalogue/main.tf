@@ -100,7 +100,7 @@ resource "aws_lb_target_group" "catalogue" {
   healthy_threshold = 2
   interval =10
   matcher = "200-299"
-  path = /health
+  path = "/health"
   protocol = HTTP
   port = 8080
   timeout = 5
