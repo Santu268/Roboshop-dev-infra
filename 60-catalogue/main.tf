@@ -71,7 +71,7 @@ resource "aws_launch_template" "catalogue" {
   }
 
   tag_specifications {
-    resource_type = "volumn"
+    resource_type = "volume"
 
     tags = merge (
       local.common_tags,
