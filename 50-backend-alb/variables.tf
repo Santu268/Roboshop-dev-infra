@@ -31,22 +31,3 @@ variable "env" {
   type = string
   default = "santoshshell.online"
  }
-
-variable "mysql_passwd" {
-  type = string
-  }
-
-  variable "redis_script_version" {
-  type = string
-  default = "1.1"
- }
-
-  variable "rabbitmq_script_version" {
-  type = string
-  default = "1.1"
- }
-
- variable "mysql_script_version" {
-  type = string
-  default = "1.1"
- }
