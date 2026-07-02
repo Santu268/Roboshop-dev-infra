@@ -1,6 +1,6 @@
 resource "aws_route53_record" "www" {
   zone_id = local.zone_id
-  name    = "${local.common_name}}.${local.domain_name}" # *.backend-alb-dev.santoshshell.online
+  name    = "${local.common_name}.${local.domain_name}" # roboshop-dev.santoshshell.online
   type    = "A"
 
   alias {
